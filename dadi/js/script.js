@@ -5,10 +5,6 @@ console.log(userScore);
 let pcScore = Math.floor(Math.random() * 6) +1 ;
 console.log(pcScore);
 const container = document.getElementById('container');
-const userScoreBox = document.querySelector('#container div');
-const pcScoreBox = document.querySelector('#container div:nth-child(2)');
-userScoreBox.innerHTML = userScore;
-pcScoreBox.innerHTML = pcScore;
 // /dichiarazione variabili
 
 // creazione box dove mettere gli elementi
@@ -18,6 +14,11 @@ for (let index = 0; index < 3; index++) {
     container.append(element);   
 }
 // /creazione box dove mettere gli elementi
+
+const userScoreBox = document.querySelector('#container div');
+const pcScoreBox = document.querySelector('#container div:nth-child(2)');
+userScoreBox.innerHTML = userScore;
+pcScoreBox.innerHTML = pcScore;
 
 // condizione per verificare il vincitore tra giocatore e pc 
 if (userScore > pcScore) {
