@@ -6,7 +6,7 @@ for (let index = 0; index < mailArray.length; index++) {
    if (mailArray[index] == userMail) {
     boolean = true;
    }    
-};
+}
 if (boolean == true) {
     console.log(boolean);
 
