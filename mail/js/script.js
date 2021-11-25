@@ -1,5 +1,14 @@
 const userMail = prompt('Give me your e-mail');
-const mailArray = ['luca@mario.it', 'luca@gmail.it', 'luca@yahoo.it', 'luca@tiscali.it', 'luca@live.it', 'luca@hotmail.it', 'luca@fulvio.it', 'luca@francesco.it',];
+const mailArray = [
+    'luca@mario.it', 
+    'luca@gmail.it',
+    'luca@yahoo.it', 
+    'luca@tiscali.it', 
+    'luca@live.it', 
+    'luca@hotmail.it', 
+    'luca@fulvio.it', 
+    'luca@francesco.it'
+];
 let boolean = false;
 
 for (let index = 0; index < mailArray.length; index++) {
@@ -8,7 +17,7 @@ for (let index = 0; index < mailArray.length; index++) {
    }    
 }
 if (boolean == true) {
-    console.log(boolean);
+    console.log('sei nella lista');
 
 }
 else 
